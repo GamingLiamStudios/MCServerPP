@@ -1,2 +1,2 @@
-# MCServerPP
+# MCServer++
 A C++ Minecraft Server.
