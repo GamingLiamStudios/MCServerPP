@@ -5,7 +5,7 @@
 #define WIN32_LEAN_AND_MEAN
 
 #include <iphlpapi.h>
-#include <stdlib.h>
+#include <stdio.h>
 #include <windows.h>
 #include <winsock2.h>
 #include <ws2tcpip.h>
@@ -123,7 +123,7 @@ namespace gls::TCP {
             return INVALID_SOCKET;
         }
 
-        // int write(SOCKET target, char *data, size_t length) { int iResult; }
+        int write(SOCKET target, char *data, size_t length) { int iResult; }
 
         int releaseClient(SOCKET clientSocket) {
             int iResult;

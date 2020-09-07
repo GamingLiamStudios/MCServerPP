@@ -18,8 +18,7 @@ source_group("Headers" FILES ${PROJECT_HEADERS})
 source_group("Sources" FILES ${PROJECT_SOURCES})
 
 add_definitions(-DPROJECT_SOURCE_DIR=\"${PROJECT_SOURCE_DIR}\")
-add_executable(${PROJECT_NAME} ${PROJECT_SOURCES} ${PROJECT_HEADERS}
-                               ${PROJECT_CONFIGS}) 
+add_executable(${PROJECT_NAME} ${PROJECT_SOURCES}) 
 
 IF (WIN32)
     target_link_libraries(${PROJECT_NAME} ws2_32)         
